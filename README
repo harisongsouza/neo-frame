@@ -1,0 +1,33 @@
+STANDARDIZE COMMITS:
+
+"PT/BR":
+feat: adicionar endpoint de login
+fix: corrigir bug no cálculo de juros
+docs: atualizar README com instruções de deploy
+style: ajustar formatação do código (sem mudanças lógicas)
+refactor: simplificar lógica de autenticação
+test: adicionar testes para UserService
+chore: atualizar dependências do projeto
+
+"EN":
+feat: add login endpoint
+fix: fix bug in interest calculation
+docs: update README with deployment instructions
+style: adjust code formatting (no logical changes)
+refactor: simplify authentication logic
+test: add tests for UserService
+chore: update project dependencies
+
+"exemplos": 
+
+feat: implementar cache em memória para usuários
+
+Motivo:
+- Melhorar performance no endpoint /users
+- Evitar consultas repetidas no banco
+
+outro exemplo:
+
+git commit -m "feat: adicionar autenticação JWT" -m "Foi necessário implementar JWT para permitir login seguro.
+Inclui middleware de verificação de token e refresh token."
+
