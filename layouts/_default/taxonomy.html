@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="video-showcase-container">
+    <header class="video-showcase-header">
+        <h1>Categoria: {{ .Title }}</h1>
+        <p>Navegue pelos vídeos disponíveis nesta categoria.</p>
+    </header>
+
+    <div class="video-grid">
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink }}" class="video-card-link">
+            <article class="video-card">
+                <div class="video-player-wrapper">
+                    <video
+                        class="local-video-player"
+                        src="{{ .Params.src }}"
+                        poster="{{ .Params.poster }}"
+                        loop
+                        muted
+                        playsinline
+                        preload="metadata">
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3>{{ .Title }}</h3>
+                    <p>{{ .Params.description }}</p>
+                </div>
+            </article>
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

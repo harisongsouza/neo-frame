@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="category-showcase-container">
+    <header class="category-showcase-header">
+        <h1>{{ .Title }}</h1>
+        <p>Explore nossos vídeos por categoria.</p>
+    </header>
+
+    <div class="category-grid">
+        {{ range .Data.Terms.ByTitle }}
+            <a href="{{ .Page.RelPermalink }}" class="category-banner-card">
+                <div class="banner-background" style="background-image: url('/images/banners/{{ .Name | urlize }}.jpg');">
+                    <div class="banner-overlay">
+                        <h2>{{ .Title }}</h2>
+                    </div>
+                </div>
+            </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

@@ -101,3 +101,8 @@ enableGitInfo = true      # Enable Git info for lastmod
     #name = "Blog"
     #url = "/blog"
     #weight = 3
+
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

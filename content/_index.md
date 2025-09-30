@@ -66,7 +66,7 @@ testimonials:
         src="/videos/template-lower-third.mp4" 
         poster="/images/posters/template-lower-third-poster.jpg" 
         title="" 
-        link="/templates/"
+        link="/categories/"
     >}}
 
 {{< /video-showcase >}}

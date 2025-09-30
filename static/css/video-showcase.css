@@ -236,3 +236,76 @@
         grid-template-columns: 1fr; 
     } 
 }
+
+/* Estilos para a página de banners de categoria */
+.category-showcase-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.category-showcase-header {
+    margin-bottom: 3rem;
+}
+
+.category-showcase-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.category-showcase-header p {
+    font-size: 1.125rem;
+    color: #6b7280; /* cinza */
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.category-banner-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-banner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.banner-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%);
+    display: flex;
+    align-items: flex-end; /* Alinha o texto na parte de baixo */
+    justify-content: flex-start; /* Alinha o texto à esquerda */
+    padding: 1.5rem;
+}
+
+.banner-overlay h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
