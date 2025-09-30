@@ -1,7 +1,7 @@
 # Basic Configuration
 baseURL = "/"
 languageCode = "en-us"
-title = "Your Site Title"
+title = "NeoFrame"
 theme = "hugo-saasify-theme"
 
 # Required Features
@@ -35,9 +35,9 @@ enableGitInfo = true      # Enable Git info for lastmod
 
 # Theme Parameters
 [params]
-  description = "Your site description"
-  author = "Your Name"
-  logo = "/images/logo.svg"      # Path to your logo
+  description = "Make videos to youtube, tik tok, instagram etc"
+  author = "Harison"
+  logo = "/images/logo.png"      # Path to your logo
   # Google Analytics ID (e.g., "G-XXXXXXXXXX")
   googleAnalytics = "G-XXXXXXXXXX"  # Only enabled in production
 
@@ -57,8 +57,8 @@ enableGitInfo = true      # Enable Git info for lastmod
     # Header Buttons (optional)
     [params.header.buttons]
       [params.header.buttons.signIn]
-        text = "Sign in"
-        url = "/signin"
+        text = "Contact"
+        url = "/get-started"
       [params.header.buttons.getStarted]
         text = "Get Started"
         url = "/get-started"
@@ -84,20 +84,20 @@ enableGitInfo = true      # Enable Git info for lastmod
 
 # Navigation Menu
 [menu]
-  [[menu.main]]
-    name = "Features"
-    weight = 1
-    [menu.main.params]
-      has_submenu = true
-      submenu = [
-        { name = "Feature 1", url = "/features/feature-1/" },
-        { name = "Feature 2", url = "/features/feature-2/" }
-      ]
-  [[menu.main]]
-    name = "Pricing"
-    url = "/pricing"
-    weight = 2
-  [[menu.main]]
-    name = "Blog"
-    url = "/blog"
-    weight = 3
+  #[[menu.main]]
+    #name = "Features"
+    #weight = 1
+    #[menu.main.params]
+      #has_submenu = true
+      #submenu = [
+        #{ name = "Feature 1", url = "/features/feature-1/" },
+        #{ name = "Feature 2", url = "/features/feature-2/" }
+      #]
+  #[[menu.main]]
+    #name = "Pricing"
+    #url = "/pricing"
+    #weight = 1
+  #[[menu.main]]
+    #name = "Blog"
+    #url = "/blog"
+    #weight = 3

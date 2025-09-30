@@ -1,0 +1,238 @@
+.video-showcase-container { 
+    width: 100%; 
+    /* Mantenha o max-width, ou aumente se a largura total da tela permitir */
+    max-width: 1300px; /* Um pouco mais largo para acomodar 3 colunas maiores */ 
+    margin: 4rem auto; 
+    padding: 0 1rem; 
+    text-align: center; 
+} 
+
+.video-showcase-header h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.video-showcase-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+}
+
+.video-grid { 
+    display: grid; 
+    /* Força 3 colunas para acomodar os 2 vídeos e 1 máscara */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+} 
+
+.video-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Garante que a área do link preencha o espaço */
+}
+
+.video-card {
+  text-align: left;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card-link:hover .video-card {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.video-player-wrapper { 
+    position: relative; 
+    aspect-ratio: 16 / 9; 
+    background-color: #f3f4f6; 
+    cursor: pointer; /* Indica que é clicável/interativo */
+} 
+
+.local-video-player { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    /* Esconde o vídeo por padrão. A thumb/poster fica visível. */
+    opacity: 0; 
+    transition: opacity 0.3s ease; /* Transição suave para o preview */
+} 
+
+/* O poster (thumb) deve ser exibido como background do wrapper */
+.video-player-wrapper {
+    /* Define o poster como background. O JS irá lidar com a troca. */
+    background-size: cover;
+    background-position: center;
+    /* Certifique-se que o poster do vídeo esteja definido via shortcode/HTML */
+}
+
+/* O vídeo aparece (opacity: 1) APENAS quando a classe 'is-playing' é adicionada via JS */
+.video-player-wrapper.is-playing .local-video-player {
+    opacity: 1;
+}
+
+
+/* ------------------------------------------------ */
+/* --- Estilo para o Ícone de Play (Moderno) --- */
+/* ------------------------------------------------ */
+
+.play-icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 3.5rem; /* Tamanho bom para o ícone */
+    height: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Sombra suave e transição */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Ícone de seta (se estiver usando FontAwesome ou similar, use a classe. Caso contrário, use CSS) */
+.play-icon-overlay::after {
+    content: '▶'; /* Símbolo de play (pode ser substituído por um SVG ou Font Awesome) */
+    color: #4f46e5; /* Cor primária (índigo) */
+    font-size: 1.25rem;
+    /* Ajuste fino para centralizar o triângulo */
+    transform: translateX(2px); 
+}
+
+/* Esconde o ícone de play quando o mouse estiver em cima (e o vídeo começar a tocar) */
+.video-player-wrapper.is-playing .play-icon-overlay {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Efeito sutil ao passar o mouse sobre o wrapper antes de dar play */
+.video-player-wrapper:hover .play-icon-overlay {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: #fff;
+}
+
+
+
+.video-info {
+  padding: 1rem 1.25rem;
+}
+
+.video-info h3 {
+  font-size: 1.125rem; /* Título um pouco menor */
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.video-info p {
+  font-size: 0.9rem; /* Descrição um pouco menor */
+  color: #4b5563;
+}
+
+.video-more-mask-card {
+    position: relative;
+    /* Herda o estilo do card de vídeo para ter o mesmo tamanho e sombra */
+    text-align: left;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px_6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Garante que preencha a célula da grid */
+}
+
+/* Aplica o efeito visual do link (como os outros cards) */
+.video-more-mask-link:hover .video-more-mask-card {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+.mask-wrapper {
+    position: relative;
+    /* O wrapper precisa ter a mesma proporção que a do vídeo */
+    aspect-ratio: 16 / 9; 
+    background-image: url("/images/posters/template-lower-third-poster.jpg"); /* Usa o poster do vídeo para o efeito borrado */
+    background-size: cover;
+    background-position: center;
+    
+    /* Aplica um desfoque moderno (blur) à imagem de fundo */
+    filter: blur(4px); 
+    transform: scale(1.05); /* Escala um pouco para evitar bordas visíveis do desfoque */
+}
+
+/* O gradiente 'fade-out' e a sobreposição escura */
+.mask-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradiente que escurece e dá o efeito "borrado" */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.video-more-mask-link:hover .mask-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.mask-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.mask-icon-arrow {
+    font-size: 2.5rem;
+    line-height: 1;
+    /* Animação sutil para indicar ação */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.mask-info {
+    padding: 1rem 1.25rem;
+    text-align: center;
+}
+
+.mask-info p {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin: 0;
+}
+
+
+/* --- RESPONSIVIDADE --- */ 
+/* Para tablets: 2 colunas (2 vídeos + 1 máscara em 2 linhas) */
+@media (max-width: 992px) { 
+    .video-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+} 
+
+/* Para celulares: 1 coluna */
+@media (max-width: 600px) { 
+    .video-grid { 
+        grid-template-columns: 1fr; 
+    } 
+}

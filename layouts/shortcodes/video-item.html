@@ -1,0 +1,32 @@
+{{ $link := .Get "link" | default "" }}
+{{ $src := .Get "src" | default "" }}
+{{ $poster := .Get "poster" | default "" }}
+
+{{ if $link }}<a href="{{ $link | relURL }}" class="video-card-link">{{ end }}
+
+<article class="video-card">
+    <div class="video-player-wrapper" data-poster="{{ $poster | relURL }}">
+        
+        <video
+            loop
+            muted
+            playsinline
+            preload="none"
+            poster="{{ $poster | relURL }}"
+            data-src="{{ $src | relURL }}"
+            class="local-video-player"
+        >
+            <source src="{{ $src | relURL }}" type="video/mp4">
+        </video>
+        
+        <div class="play-icon-overlay"></div>
+        
+    </div>
+    
+    <div class="video-info">
+        <h3>{{ .Get "title" }}</h3>
+        <p>{{ .Get "description" }}</p>
+    </div>
+</article>
+
+{{ if $link }}</a>{{ end }}

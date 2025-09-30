@@ -1,0 +1,9 @@
+<section class="video-showcase-container">
+    <div class="video-showcase-header">
+        <h2>{{ .Get "title" }}</h2>
+        <p>{{ .Get "description" }}</p>
+    </div>
+    <div class="video-grid">
+        {{ .Inner }}
+    </div>
+</section>
