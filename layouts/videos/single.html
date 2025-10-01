@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="video-single-container">
+
+    <nav class="breadcrumbs">
+        <a href="/">Início</a>
+        <span>›</span>
+        <a href="/categories/">Categorias</a>
+        <span>›</span>
+        {{ with .Params.categories }}
+            {{ with index . 0 }}
+                <a href="{{ printf "/categories/%s" (. | urlize) | relURL }}">{{ . | humanize }}</a>
+            {{ end }}
+        {{ end }}
+    </nav>
+    
+    <div class="video-player-main">
+        <video
+            controls
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="{{ .Params.poster | relURL }}"
+        >
+            <source src="{{ .Params.src | relURL }}" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+
+    <div class="video-details">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.description }}</p>
+    </div>
+
+</div>
+{{ end }}

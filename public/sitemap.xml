@@ -14,9 +14,6 @@
     <loc>//localhost:1313/blog/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/content/</loc>
-    <lastmod>2025-09-28T21:11:02-03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/blog/content-management-hugo/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
@@ -24,9 +21,6 @@
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/hugo/</loc>
-    <lastmod>2025-09-28T21:11:02-03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/organization/</loc>
@@ -44,9 +38,6 @@
     <loc>//localhost:1313/blog/optimizing-hugo-performance/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/performance/</loc>
-    <lastmod>2025-09-28T21:11:02-03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/performance/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
@@ -54,9 +45,6 @@
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/blog/deploying-hugo-sites/</loc>
-    <lastmod>2025-09-28T21:11:02-03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/deployment/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/deployment/</loc>
@@ -77,9 +65,6 @@
     <loc>//localhost:1313/blog/customizing-your-hugo-theme/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/development/</loc>
-    <lastmod>2025-09-28T21:11:02-03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/themes/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
@@ -95,25 +80,28 @@
     <loc>//localhost:1313/tags/static-site/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/tutorials/</loc>
-    <lastmod>2025-09-28T21:11:02-03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/web-development/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/contact/</loc>
+  </url><url>
     <loc>//localhost:1313/videos/anime-action-opener/</loc>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/company/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/anime/</loc>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/features/design-system/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/cinema/</loc>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/videos/top-10-countdown/</loc>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/features/developer-experience/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
@@ -122,9 +110,10 @@
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2025-09-30T17:48:29-03:00</lastmod>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/videos/filme-epico-intro/</loc>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/careers/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
@@ -135,6 +124,9 @@
     <loc>//localhost:1313/features/performance/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/pricing/</loc>
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
@@ -142,7 +134,9 @@
     <lastmod>2025-09-28T21:11:02-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/top-10/</loc>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/videos/</loc>
+    <lastmod>2025-09-30T20:32:00-03:00</lastmod>
   </url>
 </urlset>

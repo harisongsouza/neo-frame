@@ -3,7 +3,6 @@ title: "Customizing Your Hugo Theme: A Deep Dive"
 date: 2023-07-21
 author: "Jane Smith"
 description: "Learn how to customize your Hugo theme to create a unique website that matches your brand and requirements."
-categories: ["Development"]
 tags: ["hugo", "themes", "customization", "web-design"]
 featured_image: "/images/blog/blog-2.webp"
 ---

@@ -29,10 +29,10 @@ testimonials:
 {{< hero 
     headline="Build Your SaaS Website"
     sub_headline="Create stunning, responsive websites that load instantly. Built with Hugo and TailwindCSS for maximum performance and flexibility."
-    primary_button_text="Get Started Free"
-    primary_button_url="#"
-    secondary_button_text="View Demo"
-    secondary_button_url="#"
+    primary_button_text="Get Started Now"
+    primary_button_url="/contact/"
+    secondary_button_text="Preview"
+    secondary_button_url="/categories/"
     hero_image="/images/hero-dashboard2.jpg"
     gradient-from="#dbeafe"
     gradient-to="#f3e8ff"
@@ -138,64 +138,6 @@ testimonials:
 {{< /pricing-table-1 >}}
 
 <div class="mt-16"></div>
-
-{{< pricing-table-2 >}}
-{
-    "title": "Alternative Pricing Options",
-    "description": "Choose a plan that best suits your business needs with our flexible pricing options.",
-    "plans": [
-        {
-            "name": "Basic",
-            "price": "19",
-            "description": "Perfect for freelancers and solo developers.",
-            "features": [
-                "Core features included",
-                "Community support",
-                "Team size: 1 developer",
-                "Basic analytics",
-                "Monthly updates"
-            ],
-            "button": {
-                "text": "Choose Basic",
-                "url": "#"
-            }
-        },
-        {
-            "name": "Professional",
-            "price": "79",
-            "description": "Ideal for growing development teams.",
-            "featured": true,
-            "features": [
-                "All Basic features",
-                "Priority support",
-                "Team size: up to 5 developers",
-                "Advanced analytics",
-                "CI/CD integration"
-            ],
-            "button": {
-                "text": "Choose Pro",
-                "url": "#"
-            }
-        },
-        {
-            "name": "Business",
-            "price": "299",
-            "description": "For large organizations and enterprises.",
-            "features": [
-                "All Pro features",
-                "24/7 dedicated support",
-                "Unlimited team size",
-                "Custom integrations",
-                "SLA guarantee"
-            ],
-            "button": {
-                "text": "Choose Business",
-                "url": "#"
-            }
-        }
-    ]
-}
-{{< /pricing-table-2 >}}
 
 {{< faq >}}
 {
